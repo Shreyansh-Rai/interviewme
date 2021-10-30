@@ -14,7 +14,7 @@ const dbClass = require('./dbClass')
 
 const obj = new dbClass()
 
-console.log('asgsg')
+console.log('sun raha hai na tu~')
 // mongoose.connect("mongodb://localhost/userDbs",{
 //     useUnifiedTopology: true,
 //     useNewUrlParser: true,
@@ -131,7 +131,16 @@ app.use(express.json())
 app.get('/Meetings', async (req, res) => {
     res.json({ message: 'connection success' })
 })
+app.post('/Meetings/Accept/:id', async (req, res) => {
+  // console.log(req.body)
 
+  // find the user
+  let user = await intervieweeModel.findOne({ uID: req.body.uID })
+
+  console.log(user)
+
+  res.json(user)
+})
 app.post('/Meetings/Get/:id', async (req,res) =>
 {
     console.log(req.body)
