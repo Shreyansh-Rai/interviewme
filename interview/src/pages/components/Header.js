@@ -6,7 +6,7 @@ export default function Header() {
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    INTER!VIEW
+                    INTER![VIEW]
                 </a>
                 <button
                     className="navbar-toggler"
