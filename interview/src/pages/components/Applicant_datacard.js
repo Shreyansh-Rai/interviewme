@@ -42,10 +42,6 @@ export default function Applicant_datacard(props){
                 <p style={{fontSize: "250%"}}>Higher secondary school:</p>
                 <p className= "applicant_element">{props.hsschool}</p>
             </div>
-            
-            
-            
-            
         </div>
     
     </>)

@@ -3,8 +3,10 @@
     padding:0;
     margin: 0;
 }
+/* #388087 #6fb3b8 #badfe7 #c2edce #f6f6f2*/
 body{
     background: #6FB3B8;
+    border-radius: 10px;
 }
 #screen 
 {
@@ -38,7 +40,10 @@ video{
     margin : 10px 10px
 }
 .chathead{
-    padding-bottom:8px;
+    padding: 2%;
+    background-color: #c2edce;
+    border-radius: 20px;
+    margin: 4%;
 }
 .chatarea{
     flex: 0.25;
@@ -47,6 +52,7 @@ video{
     padding:6px;
     overflow-y: auto;
     padding-bottom: 0;
+    border-radius: 30px 0px 0px 30px;
 }
 .chats{
     padding-bottom: 2px;
@@ -120,7 +126,7 @@ video{
 
 .mute
 {
-    color: rgb(173, 173, 173);
+    color: #c2edce;
 }
 
 .webcam
@@ -166,8 +172,13 @@ video{
 
 .messagearea input {
     flex-grow: 1;
-    background-color: transparent;
+    background-color: #c2edce;
+    padding: 2%;
     border: none;
     color: #F5F5F5;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    font-size: 100%;
+
     border-style: none;
 }

@@ -48,7 +48,7 @@ async function predict() {
     if(prediction[1].probability >0.75)
     {
 
-        alert("THERE ARE MORE THAN 2 PEOPLE IN THE FRAME!!!")
+        alert("THERE ARE MORE THAN 1 PEOPLE IN THE FRAME!!!")
         console.log("alert kiya");
         // socket.emit("alertALL", roomuuid2,uname2);
     }

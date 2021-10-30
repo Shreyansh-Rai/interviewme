@@ -37,8 +37,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 30px;
+
    
-    padding: 1.5%;
+    padding: 1%;
     align-items: center;
     
 }
@@ -46,10 +47,22 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 200%;
-    border-radius: 30px;
-    padding: 2%;
+    
     background-color: #388087;
     color:white;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    background: #388087;
+    border-radius: 10px;
+    margin-left: 20pt;
+    margin-right: 20pt;
     
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    
+}
+.applicant_element:hover{
+    background-color: #6fb3b8;
 }

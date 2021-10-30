@@ -101,30 +101,36 @@ function url_redirect(url){
               
         }
       </div> */}
-      <Header/>
-      <div className="meeting_card_flex" div style={sty}>
+       <Header/>
+      <div className="meeting_card_flex" >
       {
         meeting_list.map((i) => (
             
-            <div className="card" >
-              <div key={i[2]} className="card-header">{i[0]}</div>
-              <div className="card-body">
-                <h5 key={i[2]} className="card-title">{i[1]}</h5>
+            <div className="card_" >
+              <div key={i[2]} className="card-header_">{i[0]}</div>
+              
                 
-                <div style= {ty}>
+                <div className="flex_meeting_">
+                    <p className="flex_meeting_left">Interviewee:</p>
+                    <p className="flex_meeting_right">{i[1]}</p>
+                </div>
+                <hr/>
+                <div className="flex_meeting_2">
                     <Link to = {() =>{
                       const getstr = "/Meetings/Get/" + i[2].toString();
                       return getstr;
-                    }}><button className="btn btn-primary">Get data</button></Link>
-                    <button className="btn btn-primary" onClick = {()=>{
+                    }}  style={{textDecoration:"none"}} ><p className="buttons_">Get data</p></Link>
+                    
+                    <p className="buttons_" onClick = {()=>{
                       const urln = url + i[2].toString()
-                      url_redirect(urln)}}>start call</button>
+                      url_redirect(urln)}}>Start call</p>
+
                     <Link to = {() =>{
                       const getstr = "/Meetings/Accept/" + i[2].toString();
                       return getstr;
-                    }}><button className="btn btn-primary">Accept Applicant</button></Link>
-                    </div>
-              </div>
+                    }} style={{textDecoration:"none"}} ><p className="buttons_">Accept Applicant</p></Link>
+                </div>
+              
               
             </div>
         ))
