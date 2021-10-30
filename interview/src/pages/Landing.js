@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom"
 import Meetings from "./Meetings";
-import testimage from './imgsources/abc.jpeg';
 import Header from './components/Header';
 import Jobcard from "./components/Jobcard";
 import "./pagestyling/Landing.css"
@@ -31,7 +30,7 @@ export default function Landing() {
   }
   return (
     <>
-      
+      <div className="main_landing">
       <Header/>
       
       <div className = "jobcard" >
@@ -41,7 +40,7 @@ export default function Landing() {
       <div className = "jobcard">
         <Jobcard  job_role = {"Web Developer"} skills_list = {["JavaScript","MongoDB","Express","NodeJS","React"]} total_openings = {15} total_applicants = {32} />
       </div>
-
+      </div>
     </>
   );
 }

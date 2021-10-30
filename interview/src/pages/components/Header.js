@@ -22,13 +22,13 @@ export default function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                    <a className="nav-link active" aria-current="page" href="#">
+                    <Link to = "/" className="nav-link">
                         Home
-                    </a>
+                    </Link>
                     <Link to = "/Meetings" className="nav-link" >
                         Meetings
                     </Link>
-                    <Link to = "/Meetings"> <button className="btn btn-primary">Meetings</button> </Link>
+                    
                     </div>
                 </div>
                 </div>
@@ -36,3 +36,4 @@ export default function Header() {
         </div>
     )
 }
+

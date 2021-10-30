@@ -1,6 +1,9 @@
 import React from "react";
+import "./pagestyling/Getinfo.css"
 import { useParams } from "react-router";
 import { useState, useEffect } from 'react';
+import Applicant_datacard from "./components/Applicant_datacard";
+import Header from "./components/Header";
 export default function () {
   // const uID = useParams();
   // console.log(uID);
@@ -17,6 +20,7 @@ export default function () {
   const [pexp1, setpexp1] = useState("");
   const [pexp2, setpexp2] = useState("");
   const [pexp3, setpexp3] = useState("");
+  const appnum = "Applicant " + id;
   useEffect(() =>{
   fetch(url, {
 
@@ -37,7 +41,7 @@ export default function () {
       if(data.hasOwnProperty("postgrad_degree"))
       {setpostgraddeg(data.postgrad_degree);}
       if(data.hasOwnProperty("postgrad_college"))
-      {setpostgradclg(data.postgrad_colleg);}
+      {setpostgradclg(data.postgrad_college);}
       if(data.hasOwnProperty("past_experience1"))
       {setpexp1(data.past_experience1);}
       if(data.hasOwnProperty("past_experience2"))
@@ -49,9 +53,19 @@ export default function () {
   
   return (
     <>
-  <h2>{hisec}</h2>
-  <h2>{ungradclg}</h2>
-  <h2>{pexp3}</h2>
+    <Header/>
+    <div className="applicant_datacard">
+      <Applicant_datacard
+          applicant_name={appnum}
+          pastexperience={[pexp1,pexp2,pexp3]} 
+          pgdegree={postgraddeg}
+          pgcollege={postgradclg}
+          ugdegree={ungraddeg} 
+          ugcollege={ungradclg}
+          hsschool={hisec}
+
+      />
+      </div>
   </>
     );
 }

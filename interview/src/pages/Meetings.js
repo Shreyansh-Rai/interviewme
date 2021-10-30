@@ -101,6 +101,7 @@ function url_redirect(url){
               
         }
       </div> */}
+      <Header/>
       <div className="meeting_card_flex" div style={sty}>
       {
         meeting_list.map((i) => (

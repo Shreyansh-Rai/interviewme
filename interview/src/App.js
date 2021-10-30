@@ -9,7 +9,7 @@ import {
   useParams
 } from "react-router-dom";
 //import Room from './pages/room.ejs'
-import Applicantinfo from './pages/components/Applicantinfo';
+import Applicantinfo from './pages/Applicantinfo';
 import Meetings from './pages/Meetings';
 import Getinfo from './pages/Getinfo';
 // let nameme ;
