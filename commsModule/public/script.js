@@ -254,14 +254,14 @@ const playvid= ()=>
 }
 const buttonunmute = () => {
     const change = `
-    <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-microphone fa-4x" aria-hidden="true"></i>
     `
     document.querySelector('.mute').innerHTML = change;
   }
   
   const buttonmute = () => {
     const change = `
-    <i class="fa fa-microphone-slash fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-microphone-slash fa-4x" aria-hidden="true"></i>
     `
     document.querySelector('.mute').innerHTML = change;
   }

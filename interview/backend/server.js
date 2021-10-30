@@ -61,7 +61,7 @@ app.post('/Meetings/Accept/:id', async (req, res) => {
     console.log(req.body)
 
     // find the user
-    let user = await intervieweeModel.findOne({ uID: 1 })
+    let user = await intervieweeModel.findOne({ uID: req.body.uID })
 
     console.log(user)
 
