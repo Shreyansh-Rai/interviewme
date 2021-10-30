@@ -4,7 +4,7 @@
     margin: 0;
 }
 body{
-    background: rgb(29, 47, 65);
+    background: #6FB3B8;
 }
 #screen 
 {
@@ -66,7 +66,7 @@ video{
 
 .vids{
     flex-grow: 0.8;
-    background: rgb(29, 47, 65);
+    background: #6FB3B8;
 }
 
 @media screen and (max-width: 500px) {
@@ -89,7 +89,7 @@ video{
 
 .meetcontrols
 {
-    background-color:rgb(29, 47, 65);
+    background-color:#6FB3B8;
     display: flex;
     height: 200px;
     align-items: center;
@@ -136,7 +136,7 @@ video{
 }
 .chatarea
 {
-    background-color: rgb(29, 47, 65) ;
+    background-color: #388087;
     
 }
 .re{
