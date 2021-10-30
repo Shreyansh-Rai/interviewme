@@ -12,6 +12,7 @@ import {
 import Applicantinfo from './pages/Applicantinfo';
 import Meetings from './pages/Meetings';
 import Getinfo from './pages/Getinfo';
+import Accept from './pages/Accept';
 // let nameme ;
 // const getmeet = () => {
 //   // console.log("Works");
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route exact path = "/Meetings/Get/:id" >
             <Getinfo />
+           </Route>
+           <Route exact path = "/Meetings/Accept/:id" >
+            <Accept />
            </Route>
         </Switch>
       </Router>

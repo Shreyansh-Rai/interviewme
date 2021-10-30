@@ -119,6 +119,10 @@ function url_redirect(url){
                     <button className="btn btn-primary" onClick = {()=>{
                       const urln = url + i[2].toString()
                       url_redirect(urln)}}>start call</button>
+                    <Link to = {() =>{
+                      const getstr = "/Meetings/Accept/" + i[2].toString();
+                      return getstr;
+                    }}><button className="btn btn-primary">Accept Applicant</button></Link>
                     </div>
               </div>
               
