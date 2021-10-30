@@ -1,0 +1,13 @@
+.meeting_card_flex{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    position:relative;
+    
+}
+.card{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}

@@ -1,0 +1,59 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.job_role{
+
+    
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    background: #C4C4C4;
+    border-radius: 0px 0px 17.1429px 17.1429px;
+    margin-left: 200pt;
+    margin-right: 200pt;
+ 
+    font-size: 30px;
+    
+}
+
+.skills_needed{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    padding: 10pt;
+    color:black;
+}
+
+.skill_item_h{
+    font-size: 30px;
+    align-items: left;
+}
+.skill_item{
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    background: #C4C4C4;
+    border-radius: 10px;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    font-size: 30px;
+
+}
+.applicant_info{
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    background: #96b3bd;
+    border-radius: 10px;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    font-size: 30px;
+}
+
+
+
