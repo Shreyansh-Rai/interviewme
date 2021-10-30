@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // schema for userDbs
 let intervieweeSchema = new mongoose.Schema({
     // name gender age
-    name: {type: String, required: true},
+    name: {type: String, required: true, unique: true},
     gender: {type: String, required: true},
     age: {type: Number, required: true},
     

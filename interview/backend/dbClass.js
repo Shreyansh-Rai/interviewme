@@ -2,13 +2,13 @@ const mongoose = require('mongoose')
 
 const interviewerModel = require('./models/interviewer')
 const intervieweeModel = require('./models/interviewee')
-const meetingModel = require('./models/interviewer')
 
-mongoose.connect('mongodb://localhost/usersDbs')
+// mongoose.connect('mongodb://localhost/usersDbs')
 
 class dbClass {
     // create an interviewee document
-    createInterviewee(nme, gndr, age, hscschool, ugdeg = null, ugclg = null, pgdeg = null, pgclg = null, pe1 = null, pe2 = null, pe3 = null) {
+    createInterviewee(nme, gndr, age, hscschool, ugdeg = null, ugclg = null, 
+        pgdeg = null, pgclg = null, pe1 = null, pe2 = null, pe3 = null) {
         let newInterviewee = new intervieweeModel({
             name: nme,
             gender: gndr,

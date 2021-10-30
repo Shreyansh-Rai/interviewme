@@ -20,7 +20,7 @@ let interviewerSchema = new mongoose.Schema({
     // company name of the interviewer
     company: {type: String},
     // meetings
-    meetings: [{ type: String }]
+    meetings: [{ type: Number }]
 },
 {
     collection : 'interviewer'

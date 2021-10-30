@@ -65,7 +65,10 @@ io.on('connection',(socket)=>
         //console.log('Message recieved by the server' + messagesent)
         socket.broadcast.to(roomuuid).emit('incoming',`${username} : ${messagesent}`,username)
     })
-
+    socket.on('alertALL', (roomuuid, name)=>
+    {
+        socket.broadcast.to(roomuuid).emit('incoming',`${name} HAS ANOTHER PERSON IN THE FRAME`,name)
+    })
     socket.on('disconnect',(socid)=>
     {
         // console.log(socket.id)
@@ -84,8 +87,5 @@ io.on('connection',(socket)=>
 //chat ki koshish
 
 const users={}
-
-
-
 
 server.listen(5001)
