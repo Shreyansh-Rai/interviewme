@@ -53,14 +53,19 @@ app.post('/Meetings/Get/:id', async (req,res) => {
     res.json(retObj)
 });
 
-app.post('Meetings/Accept/:id', async (req, res) => {
-    // console.log(req.body)
+app.get('/Meetings/Accept/:id', async (req, res) => {
+    res.json({ message: 'connection success' })
+})
+
+app.post('/Meetings/Accept/:id', async (req, res) => {
+    console.log(req.body)
 
     // find the user
-    let user = await intervieweeModel.findOne({ uID: req.body.uID })
+    let user = await intervieweeModel.findOne({ uID: 1 })
 
     console.log(user)
 
     res.json(user)
+    // res.json({name: "Sarthak Harne"})
 })
 app.listen(4000)
